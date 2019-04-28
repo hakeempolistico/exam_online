@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'user_type_id',
     ];
 
     /**
@@ -36,4 +36,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function type()
+    {
+        return $this->belongsTo('App\Model\UserType', 'user_type_id');    
+    }
+
+    public function student()
+    {
+        return $this->hasOne('App\Model\Student');
+    }
+
+    public function getUserTypeAttribute()
+    {
+        return $this->type->name;
+    }
 }

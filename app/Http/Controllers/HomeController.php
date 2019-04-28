@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\Student;
+use App\Model\Subject;
+use App\Model\SubjectCategory;
+use App\Model\Module;
 
 class HomeController extends Controller
 {
@@ -23,6 +27,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $students = Student::all();
+        $subjects = Subject::all();
+        $subject_categories = SubjectCategory::all();
+        $modules = Module::all();
+        return view('dashboard', compact('students', 'subjects', 'subject_categories', 'modules'));
     }
 }

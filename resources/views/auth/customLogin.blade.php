@@ -90,12 +90,23 @@
 		                <h1 class="h3">Account Login</h1>
 		                <p>Sign In to your account</p>
 		            </div>
-		            <form action="index.html">
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
 		                <div class="form-group">
-		                    <input type="text" class="form-control" placeholder="Username" autofocus>
+		                    <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}" required autofocus>
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                            @endif
 		                </div>
 		                <div class="form-group">
-		                    <input type="password" class="form-control" placeholder="Password">
+		                    <input type="password" class="form-control" placeholder="Password" name="password" required>
+                            @if ($errors->has('password'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
+                            @endif
 		                </div>
 		                <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
 		            </form>
