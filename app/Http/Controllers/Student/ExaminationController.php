@@ -49,6 +49,11 @@ class ExaminationController extends Controller
         //
     }
 
+    public function showExam($module_id)
+    {
+        return view('student/exam-sheet');
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

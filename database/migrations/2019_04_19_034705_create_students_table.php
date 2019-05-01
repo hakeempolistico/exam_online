@@ -21,11 +21,11 @@ class CreateStudentsTable extends Migration
             $table->string('first_name', 500);
             $table->string('middle_name', 500)->nullable();
             $table->string('last_name', 500);
-            $table->text('address');
+            // $table->text('address');
             $table->string('contact_number', 100);
             $table->string('gender', 100);
-            $table->string('year', 100);
-            $table->string('section', 100);
+            // $table->string('year', 100);
+            // $table->string('section', 100);
             $table->softDeletes();
             $table->timestamps();
         });

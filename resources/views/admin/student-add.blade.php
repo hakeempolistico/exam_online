@@ -93,12 +93,12 @@
 					                                <input type="text" class="form-control" name="last_name" placeholder="Last Name" value="{{ isset($student->last_name) ? $student->last_name : '' }}">
 					                            </div>
 					                        </div>
-					                        <div class="form-group">
+					                        {{-- <div class="form-group">
 					                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Address</label>
 					                            <div class="col-lg-12">
 					                                <input type="text" class="form-control" name="address" placeholder="Address"  value="{{ isset($student->address) ? $student->address : '' }}">
 					                            </div>
-					                        </div>
+					                        </div> --}}
 					                        <div class="form-group">
 					                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Contact Number</label>
 					                            <div class="col-lg-12">
@@ -115,7 +115,7 @@
 					                                </select>
 					                            </div>
 					                        </div>
-					                        <div class="form-group">
+					                        {{-- <div class="form-group">
 					                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Year</label>
 					                            <div class="col-lg-12">
 					                                <input type="text" class="form-control" name="year" placeholder="Year"  value="{{ isset($student->year) ? $student->year : '' }}">
@@ -126,7 +126,7 @@
 					                            <div class="col-lg-12">
 					                                <input type="text" class="form-control" name="section" placeholder="Section"  value="{{ isset($student->section) ? $student->section : '' }}">
 					                            </div>
-					                        </div>
+					                        </div> --}}
 					                    </fieldset>
 					                    <!--===================================================-->
 					

@@ -44,5 +44,7 @@ Route::middleware(['auth', 'role:Admin'])->group(function () {
 });
 
 Route::middleware(['auth', 'role:Student'])->group(function () {
+	Route::get('/exam/{module_id}', '\App\Http\Controllers\Student\ExaminationController@showExam')->name('student.show.exam');
+
 	Route::resource('/examination', '\App\Http\Controllers\Student\ExaminationController');
 });

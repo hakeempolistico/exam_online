@@ -75,17 +75,20 @@
 					                        	@if(isset($question))
 					                        		@foreach($question->choices as $choice)
 						                        	<div class="group-choice">
-							                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Choice</label>
-							                            <div class="col-lg-12">
+							                            <label class="col-lg-9 col-md-9 col-sm-9 control-label pull-left" style="text-align: left">Choice</label>
+							                            <div class="col-lg-9">
 							                                <textarea class="form-control input-choice" name="choices[]" placeholder="Choices" required>{{ $choice->choice }}</textarea>
 							                            </div>
 							                        </div>
 							                        @endforeach
 					                        	@else
 						                        	<div class="group-choice">
-							                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Choice</label>
-							                            <div class="col-lg-12">
+							                            <label class="col-lg-9 col-md-9 col-sm-9 control-label pull-left" style="text-align: left">Choice</label>
+							                            <div class="col-lg-9">
 							                                <textarea class="form-control input-choice" name="choices[]" placeholder="Choices" required>{{ isset($question) ? $question->question : '' }}</textarea>
+							                            </div>
+							                            <div class="col-lg-3">
+							                                <input type="checkbox" name="answer[]" value=""> Answer<br>
 							                            </div>
 							                        </div>
 						                        @endif
