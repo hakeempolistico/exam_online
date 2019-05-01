@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Student;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Subject;
+use App\Model\SubjectCategory;
+use App\Model\Module;
 
 class ExaminationController extends Controller
 {
@@ -14,7 +17,10 @@ class ExaminationController extends Controller
      */
     public function index()
     {
-        return view('student/examination');
+        $subjects = Subject::all();
+        $categories = SubjectCategory::all();
+        $modules = Module::all();
+        return view('student/examination', compact('subjects', 'categories', 'modules'));
     }
 
     /**
