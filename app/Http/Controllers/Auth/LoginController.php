@@ -65,4 +65,41 @@ class LoginController extends Controller
         }
     }
 
+    /**
+     * Validate the user login request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
+     *
+     * @throws \Illuminate\Validation\ValidationException
+     */
+    protected function validateLogin(Request $request)
+    {
+      $username = $this->username();
+      if(isset($request->name)){
+        $username = 'name';
+      };
+        $request->validate([
+            $username => 'required|string',
+            'password' => 'required|string',
+        ]);
+    }
+
+    /**
+     * Get the needed authorization credentials from the request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    protected function credentials(Request $request)
+    {
+      $username = $this->username();
+      if(isset($request->name)){
+        $username = 'name';
+      };
+        
+      return $request->only($username, 'password');
+    }
+
+
 }

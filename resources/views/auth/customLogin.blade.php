@@ -78,16 +78,43 @@
         
 		<!-- BACKGROUND IMAGE -->
 		<!--===================================================-->
-		<div id="bg-overlay"></div>
+		<div id="bg-overlay" class="bg-img" style="background-image: url('/img/bg-img/bg-img-7.jpg');"></div>
 		
 		
 		<!-- LOGIN FORM -->
 		<!--===================================================-->
 		<div class="cls-content">
 		    <div class="cls-content-sm panel">
-		        <div class="panel-body">
+		        <div id="admin" class="panel-body">
+                    <div class="mar-ver pad-btm">
+                        <h1 class="h3">Student Account Login</h1>
+                        <p>Sign In to your account</p>
+                    </div>
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Student ID" name="name" value="{{ old('name') }}" required autofocus>
+                            @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" name="password" required>
+                            @if ($errors->has('password'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
+                    </form>
+                </div>
+
+                <div id="student" class="panel-body" hidden>
 		            <div class="mar-ver pad-btm">
-		                <h1 class="h3">Account Login</h1>
+		                <h1 class="h3">Admin Account Login</h1>
 		                <p>Sign In to your account</p>
 		            </div>
                     <form method="POST" action="{{ route('login') }}">
@@ -112,9 +139,9 @@
 		            </form>
 		        </div>
 		
-		        <div class="pad-all">
-		            <a href="pages-password-reminder.html" class="btn-link mar-rgt">Forgot password ?</a>
-		            <a href="pages-register.html" class="btn-link mar-lft">Create a new account</a>
+		        <div class="pad-all bord-top">
+		            <a id="btn-admin" href="#" class="btn-link mar-rgt">Login as student</a>
+		            <a id="btn-student" href="#" class="btn-link mar-lft">Login as admin</a>
 		        </div>
 		    </div>
 		</div>
@@ -141,6 +168,16 @@
     <!--NiftyJS [ RECOMMENDED ]-->
     <script src="{{ asset('') }}js/nifty.min.js"></script>
 
+    <script>
+        $('#btn-admin').on('click', function(){
+            $('#admin').show()
+            $('#student').hide()
+        })
+        $('#btn-student').on('click', function(){
+            $('#admin').hide()
+            $('#student').show()
+        })
+    </script>
 
 
 </body>
