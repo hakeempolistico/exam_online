@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('login');
 });
 
 Auth::routes();
@@ -32,12 +32,14 @@ Route::middleware(['auth', 'role:Admin'])->group(function () {
 	Route::get('/category/all', '\App\Http\Controllers\Admin\SubjectCategoryController@getSubjectCategoriesJson')->name('category.all');
 	Route::get('/module/all', '\App\Http\Controllers\Admin\ModuleController@getModulesJson')->name('module.all');
 	Route::get('/questions/all', '\App\Http\Controllers\Admin\QuestionController@getQuestionsJson')->name('questions.all');
+	Route::get('/lecture/all', '\App\Http\Controllers\Admin\LectureController@getLecturesJson')->name('lecture.all');
 
 	Route::resource('/student', '\App\Http\Controllers\Admin\StudentController');
 	Route::resource('/subject', '\App\Http\Controllers\Admin\SubjectController');
 	Route::resource('/category', '\App\Http\Controllers\Admin\SubjectCategoryController');
 	Route::resource('/module', '\App\Http\Controllers\Admin\ModuleController');
 	Route::resource('/question', '\App\Http\Controllers\Admin\QuestionController');
+	Route::resource('/lecture', '\App\Http\Controllers\Admin\LectureController');
 
 });
 

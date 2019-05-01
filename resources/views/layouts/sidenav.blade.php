@@ -149,6 +149,15 @@
                                                 </span>
                                             </a>
                                         </li>
+                                        <!--Menu list item-->
+                                        <li  class="{{ request()->is('lecture*') ? 'active-sub' :  '' }}">
+                                            <a href="/lecture">
+                                                <i class="demo-pli-file"></i>
+                                                <span class="menu-title">
+                                                    Lecture
+                                                </span>
+                                            </a>
+                                        </li>
                                     @endif
                                     <!-- Check User if Admin -->
                                     @if (!Auth::guest() && Auth::user()->user_type == 'student')
