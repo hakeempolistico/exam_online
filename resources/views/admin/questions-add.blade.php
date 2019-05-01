@@ -75,20 +75,46 @@
 					                        	@if(isset($question))
 					                        		@foreach($question->choices as $choice)
 						                        	<div class="group-choice">
-							                            <label class="col-lg-9 col-md-9 col-sm-9 control-label pull-left" style="text-align: left">Choice</label>
+
 							                            <div class="col-lg-9">
-							                                <textarea class="form-control input-choice" name="choices[]" placeholder="Choices" required>{{ $choice->choice }}</textarea>
+								                            <div class="form-group">
+									                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Choice</label>
+									                            <div class="col-lg-12">
+									                                <textarea class="form-control input-choice" name="choices[]" placeholder="Choices" required>{{ $choice->choice }}</textarea>
+									                            </div>
+									                        </div>
+							                            	
+							                            </div>
+							                            <div class="col-lg-3">
+							                                <div class="form-group">
+											                    <label class=" control-label">Correct Answer</label>
+											                    <select class="form-control" name="answers[]">
+											                    	<option value="0" {{ !$choice->answer ? 'selected' : '' }}>No</option>
+											                    	<option value="1" {{ $choice->answer ? 'selected' : '' }}>Yes</option>
+											                    </select>
+											                </div>
 							                            </div>
 							                        </div>
 							                        @endforeach
 					                        	@else
 						                        	<div class="group-choice">
-							                            <label class="col-lg-9 col-md-9 col-sm-9 control-label pull-left" style="text-align: left">Choice</label>
 							                            <div class="col-lg-9">
-							                                <textarea class="form-control input-choice" name="choices[]" placeholder="Choices" required>{{ isset($question) ? $question->question : '' }}</textarea>
+								                            <div class="form-group">
+									                            <label class="col-lg-12 col-md-12 col-sm-12 control-label pull-left" style="text-align: left">Choice</label>
+									                            <div class="col-lg-12">
+									                                <textarea class="form-control input-choice" name="choices[]" placeholder="Choices" required>{{ isset($question) ? $question->question : '' }}</textarea>
+									                            </div>
+									                        </div>
+							                            	
 							                            </div>
 							                            <div class="col-lg-3">
-							                                <input type="checkbox" name="answer[]" value=""> Answer<br>
+							                                <div class="form-group">
+											                    <label class=" control-label">Correct Answer</label>
+											                    <select class="form-control" name="answers[]">
+											                    	<option value="0">No</option>
+											                    	<option value="1">Yes</option>
+											                    </select>
+											                </div>
 							                            </div>
 							                        </div>
 						                        @endif
@@ -213,6 +239,18 @@
 	    		.find('.btn-submit')
 	    		.removeAttr('disabled')
 	    }
+
+	    $('form').on('submit', function(e){
+	    	var arr = []
+	    	$('select[name="answers[]"]').each(function(index){
+				arr.push($(this).val())
+			})
+			if(arr.includes('1')){
+				return true;
+			} 
+			return false;
+
+	    })
 
 
 	});

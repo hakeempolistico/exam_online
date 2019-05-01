@@ -39,18 +39,18 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->choices);11
         $question = Question::create($request->all());
-        $choice = $this->storeChoices($question, $request->choices);
+        $choice = $this->storeChoices($question, $request->choices, $request->answers);
         return redirect('question')->with('success-message', 'Successfully added question record!');    
     }
 
-    private function storeChoices($question, $choices)
+    private function storeChoices($question, $choices, $answers)
     {
         $arr = [];
         foreach ($choices as $key => $choice) {
             $arr[] = Choice::create([
                 'question_id' => $question->id,
+                'answer' => $answers[$key],
                 'choice' => $choice
             ]);
         }
@@ -93,7 +93,7 @@ class QuestionController extends Controller
         $question = Question::find($id);
         $question->update($request->all());
         $question->choices->each->delete();
-        $choices = $this->storeChoices($question, $request->choices);
+        $choices = $this->storeChoices($question, $request->choices, $request->answers);
 
         return redirect('question')->with('success-message', 'Successfully updated question record!');
     }
