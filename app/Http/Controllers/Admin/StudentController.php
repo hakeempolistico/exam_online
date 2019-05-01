@@ -54,12 +54,14 @@ class StudentController extends Controller
         $request->password = Hash::make($request->password);
         $user_type_id = UserType::where('name', 'student')->first()->id;
         $user = [
-            'name' => $request->first_name.' '.$request->last_name,
+            'name' => $request->student_id,
             'email' => $request->email,
             'password' => $request->password,
             'user_type_id' => $user_type_id,
         ]; 
         $user_info = User::create($user);
+
+        // Create Student Account
         $student = $request->all();
         $student_info = $user_info->student()->create($student);
         return redirect('student')->with('success-message', 'Successfully added student record!');
