@@ -53,9 +53,7 @@
                                         <th class="min-tablet">Middle Name</th>
                                         <th class="min-tablet">Last Name</th>
                                         <th class="min-tablet">Gender</th>
-                                        <th class="min-desktop">Address</th>
                                         <th class="min-desktop">Contact</th>
-                                        <th class="min-desktop">Year & Section</th>
                                         <th class="min-desktop">Action</th>
                                     </tr>
                                 </thead>

@@ -151,9 +151,7 @@ class StudentController extends Controller
                 $student->middle_name,
                 $student->last_name,
                 $student->gender,
-                $student->address,
                 $student->contact_number,
-                $student->year.'-'.$student->section,
                 '<a href="/student/'.$student->id.'/edit" class="btn btn-mint btn-icon btn-xs"><i class="demo-psi-pen-5 icon-sm"></i></a>
                 <a href="/student/'.$student->id.'/reset" class="btn btn-primary btn-icon btn-xs"><i class="demo-psi-lock-user icon-sm"></i></a>
                 <a data-id="'.$student->id.'" class="btn btn-danger btn-icon btn-xs btn-delete"><i class="demo-psi-remove icon-sm"></i></a>',
