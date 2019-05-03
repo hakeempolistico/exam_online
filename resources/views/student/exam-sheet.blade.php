@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Form Wizard | Nifty - Admin Template</title>
+    <title>Exam</title>
 
 
     <!--STYLESHEET-->
@@ -79,14 +79,14 @@
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 <body>
-    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+    <div id="container" class="effect aside-float aside-bright mainnav-lg" style="padding: 3rem 2rem;">
     
 
         <div class="boxed">
 
             <div class="col-lg-12">
                 <hr class="new-section-sm bord-no">
-                <h4 class="text-main pad-btm bord-btm">Bubble Numbers</h4>
+                <h4 class="text-main pad-btm bord-btm">Exam 1</h4>
                 <div class="panel">
 
                     <!-- Bubble Numbers Form Wizard -->
@@ -111,7 +111,7 @@
                                             <span class="wz-icon icon-txt text-bold">1</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Account</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
@@ -120,7 +120,7 @@
                                             <span class="wz-icon icon-txt text-bold">2</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Profile</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
@@ -129,7 +129,7 @@
                                             <span class="wz-icon icon-txt text-bold">3</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Address</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
@@ -138,61 +138,61 @@
                                             <span class="wz-icon icon-txt text-bold">4</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
-                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                    <a data-toggle="tab" href="#demo-step-tab5">
                                         <span class="icon-wrap icon-wrap-xs icon-circle bg-dark mar-ver">
                                             <span class="wz-icon icon-txt text-bold">5</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
-                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                    <a data-toggle="tab" href="#demo-step-tab6">
                                         <span class="icon-wrap icon-wrap-xs icon-circle bg-dark mar-ver">
                                             <span class="wz-icon icon-txt text-bold">6</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
-                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                    <a data-toggle="tab" href="#demo-step-tab7">
                                         <span class="icon-wrap icon-wrap-xs icon-circle bg-dark mar-ver">
                                             <span class="wz-icon icon-txt text-bold">7</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
-                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                    <a data-toggle="tab" href="#demo-step-tab8">
                                         <span class="icon-wrap icon-wrap-xs icon-circle bg-dark mar-ver">
                                             <span class="wz-icon icon-txt text-bold">8</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
-                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                    <a data-toggle="tab" href="#demo-step-tab9">
                                         <span class="icon-wrap icon-wrap-xs icon-circle bg-dark mar-ver">
                                             <span class="wz-icon icon-txt text-bold">9</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                                 <li class="col-xs-1">
-                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                    <a data-toggle="tab" href="#demo-step-tab10">
                                         <span class="icon-wrap icon-wrap-xs icon-circle bg-dark mar-ver">
                                             <span class="wz-icon icon-txt text-bold">10</span>
                                             <i class="wz-icon-done demo-psi-like"></i>
                                         </span>
-                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                        <small class="wz-desc box-block text-semibold">Question</small>
                                     </a>
                                 </li>
                             </ul>
@@ -203,59 +203,295 @@
                             <div class="panel-body">
                                 <div class="tab-content">
 
-                                    <!--First tab-->
+                                    
                                     <div id="demo-step-tab1" class="tab-pane">
-                                        <div class="form-group">
-                                            <label class="col-lg-3 control-label">Username</label>
-                                            <div class="col-lg-7">
-                                                <input type="text" class="form-control" name="username" placeholder="Username">
-                                            </div>
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-3 control-label">Email address</label>
-                                            <div class="col-lg-7">
-                                                <input type="email" class="form-control" name="email" placeholder="Email">
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!--Second tab-->
-                                    <div id="demo-step-tab2" class="tab-pane fade">
-                                        <div class="form-group">
-                                            <label class="col-lg-3 control-label">First name</label>
-                                            <div class="col-lg-7">
-                                                <input type="text" placeholder="First name" name="firstName" class="form-control">
-                                            </div>
+
+                                    <div id="demo-step-tab2" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-3 control-label">Last name</label>
-                                            <div class="col-lg-7">
-                                                <input type="text" placeholder="Last name" name="lastName" class="form-control">
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!--Third tab-->
+
                                     <div id="demo-step-tab3" class="tab-pane">
-                                        <div class="form-group">
-                                            <label class="col-lg-3 control-label">Phone Number</label>
-                                            <div class="col-lg-7">
-                                                <input type="text" placeholder="Phone number" name="phoneNumber" class="form-control">
-                                            </div>
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-3 control-label">Address</label>
-                                            <div class="col-lg-7">
-                                                <input type="text" placeholder="Address" name="address" class="form-control">
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!--Fourth tab-->
-                                    <div id="demo-step-tab4" class="tab-pane mar-btm text-center">
-                                        <h4>Thank you</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+
+                                    <div id="demo-step-tab4" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
                                     </div>
+
+
+                                    <div id="demo-step-tab5" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="demo-step-tab6" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="demo-step-tab7" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="demo-step-tab8" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="demo-step-tab9" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="demo-step-tab10" class="tab-pane">
+                                        <div class="container form-group">
+                                            <label class="control-label text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+                                        </div>
+                                        <div class="form-group container">
+                                           <div class="col-md-12">             
+
+                                            <input id="demo-form-radio-241" class="magic-radio rad-choices" type="radio" value="A" name="question_id-1" data-bol="1" data-index="1">             
+                                            <label for="demo-form-radio-241"> A. Gravitational fields</label>     
+
+                                            <input id="demo-form-radio-242" class="magic-radio rad-choices" type="radio" value="B" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-242"> B. Distance</label>             
+
+                                            <input id="demo-form-radio-243" class="magic-radio rad-choices" type="radio" value="C" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-243"> C. Matter</label>             
+
+                                            <input id="demo-form-radio-244" class="magic-radio rad-choices" type="radio" value="D" name="question_id-1" data-bol="0" data-index="1">             
+                                            <label for="demo-form-radio-244"> D. Electromagnetism</label>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -310,9 +546,6 @@
 
 
     <!--=================================================-->
-    
-    <!--Demo script [ DEMONSTRATION ]-->
-    <script src="/js/demo/nifty-demo.min.js"></script>
 
     
     <!--Bootstrap Wizard [ OPTIONAL ]-->
@@ -326,8 +559,6 @@
     <!--Form Wizard [ SAMPLE ]-->
     <script src="/js/demo/form-wizard.js"></script>
 
-
-    
 
 </body>
 </html>
