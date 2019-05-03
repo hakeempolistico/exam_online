@@ -16,10 +16,13 @@ class RoleCheck
      */
     public function handle($request, Closure $next, $role)
     {
-        if (Auth::user()->user_type || $role) {
-        return $next($request);
-    }
+        $roles = explode('|',$role);
+        foreach ($roles as $key => $role) {
+            if (Auth::user()->user_type == $role) {
+                return $next($request);
+            }
+        }
 
-    abort(404);
+        abort(404);
     }
 }

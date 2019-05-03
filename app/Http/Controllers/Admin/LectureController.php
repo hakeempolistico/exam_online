@@ -20,6 +20,18 @@ class LectureController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function studentIndex()
+    {
+        $lectures = Lecture::all();
+        $categories = SubjectCategory::all();
+        return view('student/lecture', compact('lectures', 'categories'));
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -51,6 +63,18 @@ class LectureController extends Controller
     public function show($id)
     {
         //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function studentShow($lecture_id)
+    {
+        $lecture = Lecture::findOrFail($lecture_id);
+        return view('student/lecture-sheet', compact('lecture'));
     }
 
     /**

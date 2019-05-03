@@ -170,6 +170,15 @@
                                                 </span>
                                             </a>
                                         </li>
+                                        <!--Menu list item-->
+                                        <li  class="{{ request()->is('lecture*') ? 'active-sub' : '' }}">
+                                            <a href="/lecture">
+                                                <i class="demo-pli-check"></i>
+                                                <span class="menu-title">
+                                                    Lecture
+                                                </span>
+                                            </a>
+                                        </li>
                                     @endif
 						
 						            <li class="list-divider"></li>

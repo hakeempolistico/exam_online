@@ -22,9 +22,8 @@ Route::middleware(['auth'])->group(function () {
 	Route::get('/dashboard', 'HomeController@index')->name('home');
 });
 
-Route::middleware(['auth', 'role:Admin'])->group(function () {
+Route::middleware(['auth', 'role:admin'])->group(function () {
 
-	Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('user.logout');
 	Route::get('/student/all', '\App\Http\Controllers\Admin\StudentController@getStudentsJson')->name('student.all');
 	Route::get('/student/{id}/reset', '\App\Http\Controllers\Admin\StudentController@reset')->name('student.reset');
 	Route::put('/student/{id}/reset', '\App\Http\Controllers\Admin\StudentController@updatePassword')->name('student.update.password');
@@ -43,8 +42,14 @@ Route::middleware(['auth', 'role:Admin'])->group(function () {
 
 });
 
-Route::middleware(['auth', 'role:Student'])->group(function () {
-	Route::get('/exam/{module_id}', '\App\Http\Controllers\Student\ExaminationController@showExam')->name('student.show.exam');
+Route::middleware(['auth', 'role:student'])->group(function () {
+	Route::get('/exam/{module_id}', '\App\Http\Controllers\Student\ExaminationController@showExam')->name('student.show.exam');	
 
 	Route::resource('/examination', '\App\Http\Controllers\Student\ExaminationController');
+	Route::get('/stud/lecture', '\App\Http\Controllers\Admin\LectureController@studentIndex');
+	Route::get('/lecture/sheet/{lecture_id}', '\App\Http\Controllers\Admin\LectureController@studentShow');
+});
+
+Route::middleware(['auth', 'role:student|admin'])->group(function () {
+	Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('user.logout');
 });
