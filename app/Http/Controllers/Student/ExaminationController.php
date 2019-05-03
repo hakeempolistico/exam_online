@@ -57,7 +57,9 @@ class ExaminationController extends Controller
 
     public function showExam($module_id)
     {
-        return view('student/exam-sheet');
+        $module = Module::findOrFail($module_id);
+
+        return view('student/exam-sheet', compact('module'));
     }
 
     /**

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Model\Lecture;
 use App\Model\SubjectCategory;
+use App\Model\Score;
+use App\Model\User;
 use Illuminate\Http\Request;
 
 class LectureController extends Controller
@@ -52,6 +54,25 @@ class LectureController extends Controller
     {
         Lecture::create($request->all());
         return redirect('lecture')->with('success-message', 'Successfully added module record!');    
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function storeScore($user_id, $module_id, $score)
+    {
+        $score = [
+            'user_id' => $user_id,
+            'module_id' => $module_id,
+            'score' => $score
+        ];
+
+        $score = Score::create($score);
+
+        return redirect('/result/'.$user_id);    
     }
 
     /**
@@ -140,5 +161,11 @@ class LectureController extends Controller
         }
 
         return json_encode($json);
+    }
+
+    public function result($user_id)
+    {
+        $user = User::findOrFail($user_id);   
+        return view('student/result', compact('user'));
     }
 }

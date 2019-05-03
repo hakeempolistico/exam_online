@@ -172,10 +172,19 @@
                                         </li>
                                         <!--Menu list item-->
                                         <li  class="{{ request()->is('lecture*') ? 'active-sub' : '' }}">
-                                            <a href="/lecture">
+                                            <a href="/stud/lecture">
                                                 <i class="demo-pli-check"></i>
                                                 <span class="menu-title">
                                                     Lecture
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!--Menu list item-->
+                                        <li  class="{{ request()->is('results*') ? 'active-sub' : '' }}">
+                                            <a href="/result/{{ \Auth::user()->id }}">
+                                                <i class="demo-pli-list-view"></i>
+                                                <span class="menu-title">
+                                                    Results
                                                 </span>
                                             </a>
                                         </li>

@@ -48,6 +48,8 @@ Route::middleware(['auth', 'role:student'])->group(function () {
 	Route::resource('/examination', '\App\Http\Controllers\Student\ExaminationController');
 	Route::get('/stud/lecture', '\App\Http\Controllers\Admin\LectureController@studentIndex');
 	Route::get('/lecture/sheet/{lecture_id}', '\App\Http\Controllers\Admin\LectureController@studentShow');
+	Route::get('/store-score/{user_id}/{module_id}/{score}', '\App\Http\Controllers\Admin\LectureController@storeScore');
+	Route::get('/result/{user_id}', '\App\Http\Controllers\Admin\LectureController@result');
 });
 
 Route::middleware(['auth', 'role:student|admin'])->group(function () {
