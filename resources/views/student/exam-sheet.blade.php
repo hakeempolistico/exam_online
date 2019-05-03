@@ -88,7 +88,7 @@
 
             <div class="col-lg-12">
                 <hr class="new-section-sm bord-no">
-                <h4 class="text-main pad-btm bord-btm">Exam 1</h4>
+                <h4 class="text-main pad-btm bord-btm">{{ $module->name }}</h4>
                 <div class="panel">
 
                     <!-- Bubble Numbers Form Wizard -->

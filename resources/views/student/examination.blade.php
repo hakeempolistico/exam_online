@@ -44,7 +44,7 @@
 			                    <div class="widget-control">
 			                        <a href="#" class="add-tooltip btn btn-trans" data-original-title="Favorite"><span class="unfavorite-color"><i class="demo-psi-star icon-lg"></i></span></a>
 			                    </div>
-			                    <a href="/examination-test/{{ $module->id }}"  target="_blank">
+			                    <a href="/exam/{{ $module->id }}"  target="_blank">
 			                        <img alt="Profile Picture" class="img-lg img-circle mar-ver" src="img/profile-photos/2.png">
 			                        <p class="text-lg text-semibold mar-no text-main">{{ $module->name }}</p>
 			                        <p class="text-sm mar-no text-semibold text-primary">{{ $module->category->name }}</p>
